@@ -5,18 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form</title>
-    <script type="module" crossorigin src="/goit-js-hw-09/assets/modulepreload-polyfill-B5Qt9EMX.js"></script>
-    <link rel="stylesheet" crossorigin href="/goit-js-hw-09/assets/styles-D41GYZXt.css">
+    <script type="module" crossorigin src="/goit-js-hw-09/2-form.js"></script>
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-09/assets/modulepreload-polyfill-B5Qt9EMX.js">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-09/assets/styles-76RvqYzc.css">
   </head>
-  <body>
-
-    <main>
+<body>
+    <header class="header">
       <div class="container">
-        <a class="back-link" href="./index.html">Go back</a>
-        <h1 class="main-title">
-          Form
-        </h1>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a class="nav-link back-link" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link back-link" href="./1-gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link back-link active" href="./2-form.html">Form</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-    </main>
+    </header>
+    <div class="container">
+      <form class="feedback-form" autocomplete="off">
+        <label>
+          Email
+          <input type="email" name="email" autofocus />
+        </label>
+        <label>
+          Message
+          <textarea name="message" rows="8"></textarea>
+        </label>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
   </body>
 </html>
